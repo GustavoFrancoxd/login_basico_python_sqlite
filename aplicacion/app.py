@@ -15,6 +15,9 @@ class App(tk.Tk):
         self.geometry(f"{x}x{y}")
         self.resizable(False, False)
 
+    def funcion(self):
+        pass
+
 
     def show_login(self):
         """ Muestra la pantalla de login """
