@@ -5,6 +5,7 @@ class HomePage(tk.Frame):
     def __init__(self, master, user_email):
         super().__init__(master)
         self.master = master
+        self.master.title("Home")
         self.master.medida_ventana(600, 600)
         self.pack()
 

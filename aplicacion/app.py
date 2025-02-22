@@ -1,4 +1,6 @@
 import tkinter as tk
+
+from sign_up import SignUp
 from login import LoginPage
 from home import HomePage
 
@@ -27,9 +29,15 @@ class App(tk.Tk):
         self.clear_screen()
         HomePage(self, user_email)
 
+    def sign_up(self):
+        self.clear_screen()
+        SignUp(self)
+
+
 
     def clear_screen(self):
         """ Borra los widgets actuales antes de cambiar de pantalla """
         for widget in self.winfo_children():
             widget.destroy()
+
 
