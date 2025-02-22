@@ -1,6 +1,6 @@
 import database
 
-"""este archivo es opcional, es para agregar un elemento a la base de datos para hacer pruebas"""
+""" este archivo es opcional, es para agregar un elemento a la base de datos para hacer pruebas """
 
 # Crear la tabla si no existe
 database.crear_tabla()

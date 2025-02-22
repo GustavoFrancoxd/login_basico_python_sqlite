@@ -14,6 +14,7 @@ class App(tk.Tk):
 
 
     def medida_ventana(self, x, y):
+        """ cambia el tamaño de la ventana """
         self.geometry(f"{x}x{y}")
         self.resizable(False, False)
 
@@ -29,10 +30,11 @@ class App(tk.Tk):
         self.clear_screen()
         HomePage(self, user_email)
 
+
     def sign_up(self):
+        """ Muestra en pantalla formulario registro despues de login"""
         self.clear_screen()
         SignUp(self)
-
 
 
     def clear_screen(self):

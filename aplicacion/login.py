@@ -26,17 +26,17 @@ class LoginPage(tk.Frame):
         # Crear un Label con texto clicable
         texto_clicable = tk.Label(
             self,
-            text="Haz clic aquí",
+            text="Registrarse",
             fg="blue",  # Color del texto
             cursor="hand2",  # Cambia el cursor a una mano
-            font=("Arial", 12)  # Fuente y tamaño del texto
+            font=("Arial", 10)  # Fuente y tamaño del texto
         )
-        texto_clicable.pack(pady=20)  # Añadir el Label a la ventana
+        texto_clicable.pack(pady=5)  # Añadir el Label a la ventana
 
         # Vincular el evento de clic (<Button-1>) a la función al_hacer_clic
         texto_clicable.bind("<Button-1>", lambda event: self.master.sign_up())
 
-        tk.Button(self, text="Iniciar sesión", command=self.ingresar).pack(pady=10)
+        tk.Button(self, text="Iniciar sesión", command=self.ingresar).pack(pady=3)
 
 
 
